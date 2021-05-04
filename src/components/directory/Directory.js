@@ -37,7 +37,7 @@ export const Directory = () => {
     return(
         <div className="directory-menu">
           {sections.map(({ title, imageUrl, size, id }) => (
-            <MenuItem key={id} title={title} />
+            <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
           ))}
         </div>
     );
