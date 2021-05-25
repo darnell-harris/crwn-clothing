@@ -1,5 +1,6 @@
 import './App.css';
 import { HomePage } from './pages/homepage/HomePage';
+import { SignInAndSignUp } from './pages/sign-in-and-sign-up/SignInAndSignOut';
 import { Shop } from './pages/shop/Shop';
 import { Header } from './components/header/Header';
 import { Switch, Route } from 'react-router-dom';
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path='/shop'>
           <Shop />
+        </Route>
+        <Route path='/signin'>
+          <SignInAndSignUp />
         </Route>
       </Switch>
       
